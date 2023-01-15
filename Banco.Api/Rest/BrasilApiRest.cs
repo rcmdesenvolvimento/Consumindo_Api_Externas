@@ -1,9 +1,7 @@
 ﻿using Brasil.Api.Dtos;
 using Brasil.Api.Interfaces;
 using Brasil.Api.Models;
-using Microsoft.AspNetCore.Server.IIS.Core;
 using System.Dynamic;
-using System.Runtime.ConstrainedExecution;
 using System.Text.Json;
 
 namespace Brasil.Api.Rest
@@ -58,11 +56,9 @@ namespace Brasil.Api.Rest
                     response.CodigoHttp = responseBrasilApi.StatusCode;
                     response.ErrorRetorno = JsonSerializer.Deserialize<ExpandoObject>(contentResp);
                 }
-
             }
             return response;
         }
-
 
         public async Task<ResponseGenerico<BancoModel>> BuscarBanco(string codigoBanco)
         {
@@ -86,7 +82,6 @@ namespace Brasil.Api.Rest
                     response.CodigoHttp = responseBrasilApi.StatusCode;
                     response.ErrorRetorno = JsonSerializer.Deserialize<ExpandoObject>(contentResp);
                 }
-
             }
             return response;
         }

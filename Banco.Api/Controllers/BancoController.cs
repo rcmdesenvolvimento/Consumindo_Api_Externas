@@ -1,5 +1,4 @@
 ﻿using Brasil.Api.Interfaces;
-using Brasil.Api.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.Net;
